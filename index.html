@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f4a7bb9c6a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./Images/name.png" alt="logo" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Frontend Web Developer</p>
+          <h1>
+            Hi, I'm <span>Kalyan</span><br />
+            Panchal From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------about------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Images/output_image.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Experienced Front-End Developer proficient in React, JavaScript
+              (ES6+), HTML5, CSS3, and Next.js. Specialize in user-centric
+              testing, error management, and React-compatible design systems.
+              Skilled in Git, Webpack, Babel, ESLint, and NPM. Strong advocate
+              for Agile/Scrum methodologies to foster collaborative success in
+              project management.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span> <br />
+                  HTML5, CSS3, JavaScript (ES6+) and TypeScript
+                </li>
+                <li>
+                  <span>Frameworks & Libraries</span> <br />
+                  React.js, NextJS, React Router, Redux, Bootstrap, TailwindCSS,
+                  and Material-UI
+                </li>
+                <li>
+                  <span>Tools</span> <br />
+                  Git, Webpack, Babel, ESLint, Visual Studio Code, NPM, and Yarn
+                </li>
+                <li>
+                  <span>API Integration</span> <br />
+                  RESTful APIs and JSON
+                </li>
+                <li>
+                  <span>Version Control</span> <br />
+                  Git, GitHub and Bitbucket
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Dec 2019 - Present</span> <br />
+                  Software Engineer at Trangla
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2015-2018</span> <br />
+                  Graduation(BCA) from PB Siddhartha College Of Arts & Science
+                </li>
+                <li>
+                  <span>2013-2015</span> <br />
+                  Intermediate(MEC) from Sri Medha V Jr College
+                </li>
+                <li>
+                  <span>2013</span><br />
+                  SSC from Ravindra Barathi Public School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------services-------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Elevate your online presence with my expert web design services.
+              I'm specialized in crafting visually stunning and user-friendly
+              websites tailored to your brand's unique identity and goals. From
+              sleek and modern layouts to intuitive navigation, I prioritize
+              both aesthetics and functionality to ensure a memorable and
+              engaging user experience. Let me bring your vision to life and
+              help you stand out in the digital landscape.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Transform user experiences with my UI/UX design expertise. I
+              specialize in creating intuitive interfaces that seamlessly guide
+              users through digital interactions. From wireframing to
+              prototyping, I focus on understanding user needs and behaviors to
+              craft engaging and user-centric designs. My goal is to enhance
+              usability, accessibility, and overall satisfaction. Let's
+              collaborate to elevate your user experience and drive meaningful
+              engagement.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Elevate your app's appeal and functionality with my expert app
+              design services. I'm specialize in creating intuitive, visually
+              appealing interfaces that enhance user engagement and
+              satisfaction. From concept to final product, I prioritize user
+              experience, ensuring seamless navigation and interaction across
+              platforms. Whether you're launching a new app or redesigning an
+              existing one. Let's collaborate to bring your app vision to life
+              and make a lasting impact in the digital realm.
+            </p>
+            <a href="#contact">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Projects-------------------- -->
+    <div id="projects">
+      <div class="container">
+        <div class="subtitle">My Projects</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Images/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>QuickChat App</h3>
+              <p>
+                Realtime chatting app which connects you talented people around
+                the world.
+              </p>
+              <p>Tech Stack: ReactJS, Daisy UI, Firebase.</p>
+              <a href="https://react-quick-chat.vercel.app/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>GitHub's Repo Viewer</h3>
+              <p>Find the repos of anyone based on github username</p>
+              <p>Tech Stack: ReactJS, Tailwind Css, Material Tailwind.</p>
+              <a href="https://git-hub-repo-viewer.vercel.app/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Dashbaord App</h3>
+              <p>
+                Invoices of customers dashboard having the create, edit and
+                delete functionalities.
+              </p>
+              <p>Tech Stack: NextJS, Postgresql</p>
+              <a
+                href="https://nextjs-dashboard-vert-beta.vercel.app/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/" target="_blank" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ---------------Contact-------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div class="sub-title">
+              <h1>Contact Me</h1>
+              <p>
+                <i class="fa-sharp fa-solid fa-paper-plane"></i
+                >kalyanbabu1415@gmail.com
+              </p>
+              <p><i class="fa-solid fa-square-phone"></i>+91 8247572714</p>
+              <div class="social-icons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <a href="Updated_Resume.pdf" download class="btn btn-2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © <span>Kalyan</span> Panchal. Made with
+          <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
